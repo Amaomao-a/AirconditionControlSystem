@@ -1,0 +1,1237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Manager</class>
+ <widget class="QMainWindow" name="Manager">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1088</width>
+    <height>676</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Manager</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">font: 9pt &quot;Sarasa Term SC&quot;;</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QStackedWidget" name="stackedWidget">
+    <property name="geometry">
+     <rect>
+      <x>-10</x>
+      <y>-10</y>
+      <width>1101</width>
+      <height>701</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QWidget#AdminPage{
+    background-image: url(:/image/1.jfif);
+    border-radius: 8px;
+    padding: 6px 12px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 12px;
+	font: 9pt &quot;Sarasa Term SC&quot;;
+    margin: 4px 2px;
+    color: white;
+}</string>
+    </property>
+    <property name="currentIndex">
+     <number>1</number>
+    </property>
+    <widget class="QWidget" name="LoginPage">
+     <property name="autoFillBackground">
+      <bool>false</bool>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QWidget#LoginPage{
+    background-image: url(:/image/4.jfif);
+    border-radius: 8px;
+    padding: 6px 12px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 12px;
+	font: 9pt &quot;Sarasa Term SC&quot;;
+    margin: 4px 2px;
+    color: white;
+}</string>
+     </property>
+     <widget class="QWidget" name="layoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>340</x>
+        <y>230</y>
+        <width>400</width>
+        <height>194</height>
+       </rect>
+      </property>
+      <layout class="QGridLayout" name="gridLayout">
+       <item row="0" column="0">
+        <widget class="QLabel" name="label_name">
+         <property name="styleSheet">
+          <string notr="true">QWidget{
+    background-image: url(:/image/4.jfif);
+    border-radius: 8px;
+    padding: 6px 12px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 12px;
+	font: 10pt &quot;Sarasa Term SC&quot;;
+    margin: 4px 2px;
+    color: white;
+}</string>
+         </property>
+         <property name="text">
+          <string>用户名</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1" colspan="2">
+        <widget class="QLineEdit" name="lineEdit_name">
+         <property name="styleSheet">
+          <string notr="true">QLineEdit{
+    background-image: url(:/image/4.jfif);
+    border-radius: 8px;
+    padding: 6px 12px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 12px;
+	font: 9pt &quot;Sarasa Term SC&quot;;
+    margin: 4px 2px;
+    color: white;
+}</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="3">
+        <widget class="QPushButton" name="pushButton_regi">
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+    background-color: #555555;
+    border-radius: 8px;
+    padding: 6px 12px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 12px;
+	font: 9pt &quot;Sarasa Term SC&quot;;
+    margin: 4px 2px;
+    color: white;
+}
+QPushButton:hover {
+    background-color: white;
+    color: brown
+}
+QPushButton:pressed {
+    background-color: #06AD56;
+}</string>
+         </property>
+         <property name="text">
+          <string>注册账号</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1" colspan="2">
+        <widget class="QLineEdit" name="lineEdit_passwd">
+         <property name="styleSheet">
+          <string notr="true">QWidget{
+    background-image: url(:/image/4.jfif);
+    border-radius: 8px;
+    padding: 6px 12px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 12px;
+	font: 9pt &quot;Sarasa Term SC&quot;;
+    margin: 4px 2px;
+    color: white;
+}</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="label_pwd">
+         <property name="styleSheet">
+          <string notr="true">QWidget{
+    background-image: url(:/image/4.jfif);
+    border-radius: 8px;
+    padding: 6px 12px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 12px;
+	font: 10pt &quot;Sarasa Term SC&quot;;
+    margin: 4px 2px;
+    color: white;
+}</string>
+         </property>
+         <property name="text">
+          <string>密码</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="3">
+        <widget class="QPushButton" name="pushButton_help">
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+    background-color: #00916a;
+    border-radius: 8px;
+    padding: 6px 12px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 12px;
+	font: 9pt &quot;Sarasa Term SC&quot;;
+    margin: 4px 2px;
+    color: white;
+}
+QPushButton:hover {
+    background-color: white;
+    color: brown
+}
+QPushButton:pressed {
+    background-color: #06AD56;
+}</string>
+         </property>
+         <property name="text">
+          <string>用户手册</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="3">
+        <widget class="QPushButton" name="pushButton_fw">
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+    background-color: #555555;
+    border-radius: 8px;
+    padding: 6px 12px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 12px;
+	font: 9pt &quot;Sarasa Term SC&quot;;
+    margin: 4px 2px;
+    color: white;
+}
+QPushButton:hover {
+    background-color: white;
+    color: brown
+}
+QPushButton:pressed {
+    background-color: #06AD56;
+}</string>
+         </property>
+         <property name="text">
+          <string>重置密码</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="1" colspan="2">
+        <widget class="QPushButton" name="pushButton_login">
+         <property name="font">
+          <font>
+           <family>Sarasa Term SC</family>
+           <pointsize>-1</pointsize>
+           <weight>50</weight>
+           <italic>false</italic>
+           <bold>false</bold>
+           <underline>false</underline>
+           <strikeout>false</strikeout>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+    border-radius: 8px;
+    color: #8d8dd3;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 2px;
+    background-color: white;
+    color: black;
+    border: 2px solid #51f3f3;
+}
+QPushButton:hover {
+    color: red;
+	background-color: #a5a5f7
+}
+QPushButton:pressed {
+    background-color: #06AD56;
+}</string>
+         </property>
+         <property name="text">
+          <string>登录</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QLabel" name="title">
+      <property name="geometry">
+       <rect>
+        <x>370</x>
+        <y>60</y>
+        <width>311</width>
+        <height>171</height>
+       </rect>
+      </property>
+      <property name="palette">
+       <palette>
+        <active/>
+        <inactive/>
+        <disabled/>
+       </palette>
+      </property>
+      <property name="font">
+       <font>
+        <family>Sarasa Term SC</family>
+        <pointsize>9</pointsize>
+        <weight>50</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'SimSun'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:18pt; font-weight:600;&quot;&gt;管理员登录系统&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="textFormat">
+       <enum>Qt::AutoText</enum>
+      </property>
+      <property name="wordWrap">
+       <bool>false</bool>
+      </property>
+      <property name="margin">
+       <number>0</number>
+      </property>
+      <property name="indent">
+       <number>-4</number>
+      </property>
+      <property name="openExternalLinks">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="HostAddress">
+      <property name="geometry">
+       <rect>
+        <x>450</x>
+        <y>580</y>
+        <width>131</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QWidget{
+    background-image: url(:/image/4.jfif);
+    border-radius: 8px;
+    padding: 6px 12px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 12px;
+	font: 9pt &quot;Sarasa Term SC&quot;;
+    margin: 4px 2px;
+    color: white;
+}</string>
+      </property>
+      <property name="text">
+       <string>127.0.0.1</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_name_2">
+      <property name="geometry">
+       <rect>
+        <x>330</x>
+        <y>580</y>
+        <width>121</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QWidget{
+    background-image: url(:/image/4.jfif);
+    border-radius: 8px;
+    padding: 6px 12px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 12px;
+	font: 9pt &quot;Sarasa Term SC&quot;;
+    margin: 4px 2px;
+    color: white;
+}</string>
+      </property>
+      <property name="text">
+       <string>IP and Port</string>
+      </property>
+     </widget>
+     <widget class="QSpinBox" name="port">
+      <property name="geometry">
+       <rect>
+        <x>590</x>
+        <y>580</y>
+        <width>61</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="minimum">
+       <number>1</number>
+      </property>
+      <property name="maximum">
+       <number>20000</number>
+      </property>
+      <property name="value">
+       <number>7777</number>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="connect">
+      <property name="geometry">
+       <rect>
+        <x>670</x>
+        <y>580</y>
+        <width>101</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+    background-color: #00916a;
+    border-radius: 8px;
+    padding: 6px 12px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 12px;
+	font: 9pt &quot;Sarasa Term SC&quot;;
+    margin: 4px 2px;
+    color: white;
+}
+QPushButton:hover {
+    background-color: white;
+    color: brown
+}
+QPushButton:pressed {
+    background-color: #06AD56;
+}</string>
+      </property>
+      <property name="text">
+       <string>连接</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="ManagerPage">
+     <property name="styleSheet">
+      <string notr="true">QWidget#ManagerPage{
+    background-image: url(:/image/4.jfif);
+    border-radius: 8px;
+    padding: 6px 12px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 12px;
+	font: 9pt &quot;Sarasa Term SC&quot;;
+    margin: 4px 2px;
+    color: white;
+}</string>
+     </property>
+     <widget class="QLabel" name="label_12">
+      <property name="geometry">
+       <rect>
+        <x>340</x>
+        <y>40</y>
+        <width>221</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:18pt; font-weight:600;&quot;&gt;操作台管理界面&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QWidget" name="layoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>130</y>
+        <width>801</width>
+        <height>487</height>
+       </rect>
+      </property>
+      <layout class="QGridLayout" name="ControlForm">
+       <item row="1" column="1">
+        <widget class="QTableView" name="roomInfoTable"/>
+       </item>
+       <item row="0" column="0" rowspan="4">
+        <layout class="QVBoxLayout" name="verticalLayout">
+         <item>
+          <widget class="QPushButton" name="openRoom">
+           <property name="styleSheet">
+            <string notr="true">QWidget{
+	background-color: rgb(170, 170, 127);
+    border-radius: 8px;
+    padding: 6px 12px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 12px;
+	font: 9pt &quot;Sarasa Term SC&quot;;
+    margin: 4px 2px;
+    color: white;
+}
+QPushButton:hover {
+    background-color: white;
+    border: 2px solid #555555;
+    color: black
+}
+QPushButton:pressed {
+    background-color: #06AD56;
+}</string>
+           </property>
+           <property name="text">
+            <string>开房</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="closeRoom">
+           <property name="styleSheet">
+            <string notr="true">QPushButton{
+    background-color:#42c6c6;
+    border-radius: 8px;
+    padding: 6px 12px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 12px;
+	font: 9pt &quot;Sarasa Term SC&quot;;
+    margin: 4px 2px;
+    color: white;
+}
+QPushButton:hover {
+    background-color: white;
+    border: 2px solid #555555;
+    color: black
+}
+QPushButton:pressed {
+    background-color: #06AD56;
+}</string>
+           </property>
+           <property name="text">
+            <string>退房</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="seeRoomInfo">
+           <property name="styleSheet">
+            <string notr="true">QPushButton {
+    background-color: #7b3db8;
+    border-radius: 8px;
+    padding: 4px 8px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 2px;
+    color: white;
+}
+QPushButton:hover {
+    background-color: white;
+    border: 2px solid #555555;
+    color: black
+}
+QPushButton:pressed {
+    background-color: #06AD56;
+}</string>
+           </property>
+           <property name="text">
+            <string>查看房间信息</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="detailCost">
+           <property name="styleSheet">
+            <string notr="true">QPushButton {
+    background-color: #bc3e00;
+    border-radius: 8px;
+    padding: 4px 8px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 2px;
+    color: white;
+}
+QPushButton:hover {
+    background-color: white;
+    border: 2px solid #555555;
+    color: black
+}
+QPushButton:pressed {
+    background-color: #06AD56;
+}</string>
+           </property>
+           <property name="text">
+            <string>详单</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="scheduleControl">
+           <property name="styleSheet">
+            <string notr="true">QPushButton {
+    background-color: #7b3db8;
+    border-radius: 8px;
+    padding: 4px 8px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 2px;
+    color: white;
+}
+QPushButton:hover {
+    background-color: white;
+    border: 2px solid #555555;
+    color: black
+}
+QPushButton:pressed {
+    background-color: #06AD56;
+}</string>
+           </property>
+           <property name="text">
+            <string>服务器调度管理</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="logout">
+           <property name="styleSheet">
+            <string notr="true">QPushButton {
+    background-color: #dc006e;
+    border-radius: 8px;
+    padding: 4px 8px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 2px;
+    color: white;
+}
+QPushButton:hover {
+    background-color: white;
+    border: 2px solid #555555;
+    color: black
+}
+QPushButton:pressed {
+    background-color: #06AD56;
+}</string>
+           </property>
+           <property name="text">
+            <string>登出</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QLabel" name="role">
+      <property name="geometry">
+       <rect>
+        <x>550</x>
+        <y>80</y>
+        <width>71</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+    background-color: #7070a8;
+    border-radius: 8px;
+    padding: 4px 6px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 2px;
+    color: white;
+}</string>
+      </property>
+      <property name="text">
+       <string>权限</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="windSpeed">
+      <property name="geometry">
+       <rect>
+        <x>940</x>
+        <y>250</y>
+        <width>77</width>
+        <height>39</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QWidget{
+    background-image: url(:/image/4.jfif);
+    border-radius: 8px;
+    padding: 6px 12px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 12px;
+	font: 9pt &quot;Sarasa Term SC&quot;;
+    margin: 4px 2px;
+    color: white;
+}</string>
+      </property>
+      <item>
+       <property name="text">
+        <string>0</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>1</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>2</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>3</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QLineEdit" name="roomID">
+      <property name="geometry">
+       <rect>
+        <x>940</x>
+        <y>210</y>
+        <width>78</width>
+        <height>39</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QWidget{
+    border-radius: 8px;
+    padding: 6px 12px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 12px;
+	font: 9pt &quot;Sarasa Term SC&quot;;
+    margin: 4px 2px;
+}</string>
+      </property>
+      <property name="text">
+       <string>304d</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_15">
+      <property name="geometry">
+       <rect>
+        <x>860</x>
+        <y>250</y>
+        <width>78</width>
+        <height>39</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QWidget{
+    background-image: url(:/image/4.jfif);
+    border-radius: 8px;
+    padding: 6px 12px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 12px;
+	font: 9pt &quot;Sarasa Term SC&quot;;
+    margin: 4px 2px;
+    color: white;
+}</string>
+      </property>
+      <property name="text">
+       <string>风速</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_14">
+      <property name="geometry">
+       <rect>
+        <x>860</x>
+        <y>290</y>
+        <width>71</width>
+        <height>39</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QWidget{
+    background-image: url(:/image/4.jfif);
+    border-radius: 8px;
+    padding: 6px 12px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 12px;
+	font: 9pt &quot;Sarasa Term SC&quot;;
+    margin: 4px 2px;
+    color: white;
+}</string>
+      </property>
+      <property name="text">
+       <string>温度</string>
+      </property>
+     </widget>
+     <widget class="QSpinBox" name="initTemp">
+      <property name="geometry">
+       <rect>
+        <x>939</x>
+        <y>290</y>
+        <width>81</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QWidget{
+    background-image: url(:/image/4.jfif);
+    border-radius: 8px;
+    padding: 6px 12px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 12px;
+	font: 9pt &quot;Sarasa Term SC&quot;;
+    margin: 4px 2px;
+    color: white;
+}</string>
+      </property>
+      <property name="value">
+       <number>20</number>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_13">
+      <property name="geometry">
+       <rect>
+        <x>860</x>
+        <y>210</y>
+        <width>78</width>
+        <height>39</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QWidget{
+    background-image: url(:/image/4.jfif);
+    border-radius: 8px;
+    padding: 6px 12px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 12px;
+	font: 9pt &quot;Sarasa Term SC&quot;;
+    margin: 4px 2px;
+    color: white;
+}</string>
+      </property>
+      <property name="text">
+       <string>房间号</string>
+      </property>
+     </widget>
+     <widget class="QWidget" name="layoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>860</x>
+        <y>330</y>
+        <width>161</width>
+        <height>38</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <widget class="QRadioButton" name="power">
+         <property name="styleSheet">
+          <string notr="true">QRadioButton#power {
+    background-color: #ce0000;
+    border-radius: 8px;
+    padding: 4px 8px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 2px;
+    color: white;
+}
+QRadioButton#power:hover {
+    background-color: white;
+    color: black
+}
+QRadioButton#power::indicator {
+    width:                  10px;
+    height:                 10px;
+    border-radius:          7px;
+}
+ 
+QRadioButton#power::indicator:checked {
+    background-color:       #008c67;
+    border:                 2px solid white;
+}
+ 
+QRadioButton#power::indicator:unchecked {
+    background-color:       #ce0000;
+    border:                 2px solid white;
+}</string>
+         </property>
+         <property name="text">
+          <string>ON</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QRadioButton" name="mode">
+         <property name="styleSheet">
+          <string notr="true">QRadioButton#mode {
+    background-color: #93dcdc;
+    border-radius: 8px;
+    padding: 4px 6px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 2px;
+    color: white;
+}
+QRadioButton#mode:hover {
+    background-color: white;
+    color: black
+}
+QRadioButton#mode::indicator {
+    width:                  10px;
+    height:                 10px;
+    border-radius:          7px;
+}
+ 
+QRadioButton#mode::indicator:checked {
+    background-color:       #93dcdc;
+    border:                 2px solid white;
+}
+ 
+QRadioButton#mode::indicator:unchecked {
+    background-color:       #8484c6;
+    border:                 2px solid white;
+}
+QRadioButton#mode:pressed {
+    background-color: #06AD56;
+}</string>
+         </property>
+         <property name="text">
+          <string>COLD</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QLabel" name="label_charge">
+      <property name="geometry">
+       <rect>
+        <x>860</x>
+        <y>170</y>
+        <width>78</width>
+        <height>39</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QWidget{
+    background-image: url(:/image/4.jfif);
+    border-radius: 8px;
+    padding: 6px 12px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 12px;
+	font: 9pt &quot;Sarasa Term SC&quot;;
+    margin: 4px 2px;
+    color: white;
+}</string>
+      </property>
+      <property name="text">
+       <string>rateFee</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="RATEFEE">
+      <property name="geometry">
+       <rect>
+        <x>940</x>
+        <y>170</y>
+        <width>78</width>
+        <height>39</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QWidget{
+    border-radius: 8px;
+    padding: 6px 12px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 12px;
+	font: 9pt &quot;Sarasa Term SC&quot;;
+    margin: 4px 2px;
+}</string>
+      </property>
+      <property name="text">
+       <string>0.5</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="SIZE">
+      <property name="geometry">
+       <rect>
+        <x>940</x>
+        <y>130</y>
+        <width>78</width>
+        <height>39</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QWidget{
+    border-radius: 8px;
+    padding: 6px 12px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 12px;
+	font: 9pt &quot;Sarasa Term SC&quot;;
+    margin: 4px 2px;
+}</string>
+      </property>
+      <property name="text">
+       <string>3</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_charge_2">
+      <property name="geometry">
+       <rect>
+        <x>860</x>
+        <y>130</y>
+        <width>78</width>
+        <height>39</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QWidget{
+    background-image: url(:/image/4.jfif);
+    border-radius: 8px;
+    padding: 6px 12px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 12px;
+	font: 9pt &quot;Sarasa Term SC&quot;;
+    margin: 4px 2px;
+    color: white;
+}</string>
+      </property>
+      <property name="text">
+       <string>SIZE</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="TEMPUP">
+      <property name="geometry">
+       <rect>
+        <x>940</x>
+        <y>90</y>
+        <width>78</width>
+        <height>39</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QWidget{
+    border-radius: 8px;
+    padding: 6px 12px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 12px;
+	font: 9pt &quot;Sarasa Term SC&quot;;
+    margin: 4px 2px;
+}</string>
+      </property>
+      <property name="text">
+       <string>30</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="tempUp">
+      <property name="geometry">
+       <rect>
+        <x>860</x>
+        <y>90</y>
+        <width>91</width>
+        <height>39</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QWidget{
+    background-image: url(:/image/4.jfif);
+    border-radius: 8px;
+    padding: 6px 12px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 12px;
+	font: 9pt &quot;Sarasa Term SC&quot;;
+    margin: 4px 2px;
+    color: white;
+}</string>
+      </property>
+      <property name="text">
+       <string>upLevel</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="TEMPDN">
+      <property name="geometry">
+       <rect>
+        <x>940</x>
+        <y>60</y>
+        <width>78</width>
+        <height>39</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QWidget{
+    border-radius: 8px;
+    padding: 6px 12px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 12px;
+	font: 9pt &quot;Sarasa Term SC&quot;;
+    margin: 4px 2px;
+}</string>
+      </property>
+      <property name="text">
+       <string>18</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="tempDn">
+      <property name="geometry">
+       <rect>
+        <x>860</x>
+        <y>60</y>
+        <width>91</width>
+        <height>39</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QWidget{
+    background-image: url(:/image/4.jfif);
+    border-radius: 8px;
+    padding: 6px 12px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 12px;
+	font: 9pt &quot;Sarasa Term SC&quot;;
+    margin: 4px 2px;
+    color: white;
+}</string>
+      </property>
+      <property name="text">
+       <string>dnLevel</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="RegisterPage">
+     <property name="styleSheet">
+      <string notr="true">QWidget{
+    background-image: url(:/image/4.jfif);
+    border-radius: 8px;
+    padding: 6px 12px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 12px;
+	font: 9pt &quot;Sarasa Term SC&quot;;
+    margin: 4px 2px;
+    color: white;
+}</string>
+     </property>
+     <widget class="QWidget" name="layoutWidget_2">
+      <property name="geometry">
+       <rect>
+        <x>370</x>
+        <y>190</y>
+        <width>312</width>
+        <height>254</height>
+       </rect>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_2">
+       <item row="1" column="0">
+        <widget class="QLabel" name="label_2">
+         <property name="text">
+          <string>密码(Password)</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="0">
+        <widget class="QLabel" name="label">
+         <property name="text">
+          <string>用户名(Name)</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QLabel" name="label_3">
+         <property name="text">
+          <string>密码确认(Confirm)</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QLineEdit" name="lineEdit"/>
+       </item>
+       <item row="2" column="1">
+        <widget class="QLineEdit" name="lineEdit_3"/>
+       </item>
+       <item row="1" column="1">
+        <widget class="QLineEdit" name="lineEdit_2"/>
+       </item>
+       <item row="3" column="0">
+        <widget class="QLabel" name="label_4">
+         <property name="text">
+          <string>提示(Notes)</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="0">
+        <widget class="QPushButton" name="pushButton">
+         <property name="text">
+          <string>注册</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="1">
+        <widget class="QLineEdit" name="lineEdit_4"/>
+       </item>
+       <item row="4" column="1">
+        <widget class="QPushButton" name="pushButton_2">
+         <property name="text">
+          <string>返回登录</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusBar">
+   <property name="styleSheet">
+    <string notr="true">QWidget{
+	font: 9pt &quot;Sarasa Term SC&quot;;
+    margin: 4px 2px;
+    color: black;
+}</string>
+   </property>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <tabstops>
+  <tabstop>lineEdit_name</tabstop>
+  <tabstop>lineEdit_passwd</tabstop>
+  <tabstop>pushButton_login</tabstop>
+  <tabstop>pushButton_help</tabstop>
+  <tabstop>pushButton_fw</tabstop>
+  <tabstop>pushButton_regi</tabstop>
+  <tabstop>lineEdit</tabstop>
+  <tabstop>lineEdit_3</tabstop>
+  <tabstop>lineEdit_2</tabstop>
+  <tabstop>pushButton</tabstop>
+  <tabstop>lineEdit_4</tabstop>
+  <tabstop>pushButton_2</tabstop>
+  <tabstop>seeRoomInfo</tabstop>
+  <tabstop>detailCost</tabstop>
+  <tabstop>logout</tabstop>
+  <tabstop>seeRoomInfo</tabstop>
+  <tabstop>detailCost</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>
